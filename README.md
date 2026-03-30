@@ -85,19 +85,7 @@ python scripts/eval_zeroshot.py \
 
 **Dense baseline:** point `--model` at `meta-llama/Llama-2-7b-hf` (no local checkpoint).
 
----
 
-## 3. What to report
-
-| Setting | Pruning command | `eval_ppl_wikitext2.py` | `eval_zeroshot.py` |
-|--------|-----------------|-------------------------|---------------------|
-| Dense | — | ✓ | ✓ |
-| Sparse @ s | `llama.py ... --sparsity s` | ✓ | ✓ |
-| Sparse @ s + 4-bit | `llama.py ... --sparsity s --wbits 4` | ✓ | ✓ |
-
-Store JSON under [`results/`](results/) and compare perplexity + task accuracies vs dense.
-
----
 
 ## References
 
