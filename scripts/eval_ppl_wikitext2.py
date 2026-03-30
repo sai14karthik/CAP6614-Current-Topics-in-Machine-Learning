@@ -138,7 +138,6 @@ def main() -> None:
         f"split={SPARSEGPT_WIKITEXT_SPLIT!r}) ..."
     )
     ds = _load_wikitext_test_split(args.dataset, args.dataset_config, token)
-    # HF / SparseGPT (Appendix B): join test articles with newlines for the standard PPL recipe.
     text = "\n\n".join(ds["text"])
     enc = tokenizer(text, return_tensors="pt")
     input_ids = enc["input_ids"][0]
