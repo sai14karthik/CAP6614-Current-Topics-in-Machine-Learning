@@ -1,0 +1,3 @@
+[submodule "sparsegpt"]
+	path = sparsegpt
+	url = https://github.com/IST-DASLab/sparsegpt.git
