@@ -1,18 +1,10 @@
-# CAP6614 — Current Topics in Machine Learning (Spring 2026)
+# CAP6614 — Current Topics in Machine Learning (Spring 2026) Project
 
 ## Overview
 
-This project implements and experiments with **SparseGPT**, a one-shot pruning method for large language models (LLMs).
-
-This repo follows the project angle from the Efficient AI paper list:
-
-> **Apply SparseGPT to prune LLaMA-2-7B at various sparsity levels, benchmark perplexity and zero-shot accuracy, and combine with quantization (sparse + quantized).**  
-> Code: [IST-DASLab/sparsegpt](https://github.com/IST-DASLab/sparsegpt)
-
-Upstream SparseGPT lives in [`sparsegpt/`](sparsegpt/) (submodule / vendored copy). Project-specific evaluation scripts are in [`scripts/`](scripts/).
+This project implements and experiments with **SparseGPT**, a one-shot pruning method on Llama-7b.
 
 ---
-
 ## Setup
 
 ```bash
